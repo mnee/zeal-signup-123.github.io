@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Zeal Signup</title>
+  <link rel="icon" href="Favicon.png">
+  <!-- CORE CSS-->
+  <link rel="stylesheet" href="main.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  
+</head>
+<header>
+  <img src="student-zeal-full-logo.png" id="header_logo">
+</header>
+<body>
+<div style="display: table-cell;" id="signup_cell">
+  <div style="height:100px;">
+    <p id="header_text">Start your free trial!<br>
+        <span id="sub_text">See what your child can do with unlimited math tutoring</span>
+      </p>
+  </div>
+  <div id="login-page" class="row">
+    <div class="col s12 z-depth-6 card-panel">
+      <form class="login-form">
+        <div class="row">
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12" id="email_text">
+            <i class="mdi-communication-email prefix"></i>
+            <input id="email" type="email" class="validate" onclick="clickEmailField()" required autocomplete="email">
+            <label for="email" class="center-align">Email</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12" id="password_text">
+            <i class="mdi-action-lock-outline prefix"></i>
+            <input id="password" type="password" class="validate" onclick="showPassHelp()">
+            <label for="password">Password</label>
+          </div>
+            
+        </div>
+        <div id="password_help">Passwords must be at least 8 characters with at least 1 number and 1 letter.</div>
+        <div class="row">
+          <div class="input-field col s12" id="signup_text">
+            <a class="btn waves-effect waves-light col s12" id="signup_button" onclick="signup()">SIGN UP</a>
+          </div>
+          
+        </div>
+      </form>
+    </div>
+  </div>
+    </div>
+    
+    <div style="display: table-cell" id="steps">
+        <div class="number">1</div>
+        <div class="text1">SIGN UP</div>
+        <div class="subtext1">in less than a minute</div>
+        
+        <div class="number" id="number2">2</div>
+        <div class="text1" style="margin-top: 157.5px;">START LEARNING</div>
+        <div class="subtext1" style="margin-top: 197.5px;">with former teachers & math majors</div>
+        
+        <div class="number" id="number3">3</div>
+        <div class="text1" style="margin-top: 315px;">SEE RESULTS</div>
+        <div class="subtext1" style="margin-top: 355px;">through personalized feedback</div>
+    </div>
+
+
+  <!-- ================================================
+    Scripts
+    ================================================ -->
+
+  <script src="signup.js"></script>
+  <!-- jQuery Library -->
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!--materialize js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+
+</body>
+
+</html>
